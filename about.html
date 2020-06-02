@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<title>nucleoSLIDE - About</title>
+	</head>
+
+	<body id="aboutBody">
+        <div id="aboutDiv"> 
+            <div id="titleDiv"> 
+                <h3 id="title">About <text class="nucleoTitle">nucleo</text><text class="slideTitle">SLIDE</text></h3>      
+                <p>nucleoSLIDE isn't your ordinary online game. It's a citizen science game to solve a real biology problem using data collected from actual organisms. By playing this game, you are contributing to scientific research and helping scientists ensure a brighter future for all. Although no science background is needed to play, this page gives a brief synopsis on what exactly nucleoSLIDE strives to do.
+				</p>
+                <div id="screenshotDiv">
+                    <img id="gameScreenshot" src="img/screenshot.png" alt="nucleoSLIDE screenshot">
+                    <figcaption>Screenshot of level 1 gameplay. Click <a href="img/screenshot.png" target="_blank">here</a> to enlarge image.</figcaption>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="section1" class="section"> 
+                <h3 id="title">The Motif Finding Problem</h3>
+                <p>The <strong>Motif Finding Problem (MFP)</strong> is the problem of finding patterns in DNA sequences. A <strong>DNA sequence</strong> refers to the order of nucleotides in DNA, where a <strong>nucleotide</strong> is distinguished by its base: adenine (A), thymine (T), guanine (G), or cytosine (C). Below is an illustration of an example DNA sequence:</p>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<p>In terms of DNA sequences, a <strong>motif</strong> is a short pattern that holds some biological significance. Looking at the above example, if I asked you to find some motif, say AAC, you would be able to do so with ease. What if you had to find the same motif in multiple sequences? Find AAC in each sequence below:</p>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="guanine">G</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<p>This task is a little more time consuming but still lacks difficulty. When you know what motif to be searching for, you can easily scan the sequences for that pattern. What if you don't know the motif? What if all you know is that there is some pattern of length <i>k</i> in multiple sequences? Can you find a motif of length 4 that is in each of the sequences below?</p>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="guanine">G</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="guanine">G</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="seqExDiv">
+					<table class="seqExTable">
+						<tr>
+							<td class="ellipse">...</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="cytosine">C</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="adenosine">A</td>
+							<td class="cytosine">C</td>
+							<td class="adenosine">A</td>
+							<td class="thymine">T</td>
+							<td class="thymine">T</td>
+							<td class="guanine">G</td>
+							<td class="ellipse">...</td>
+						</tr>
+					</table>
+				</div>
+				
+				<p>At this point, your brain is probably thinking <i> well that escalated quickly</i>. Although this problem is harder, it's certainly not unsolvable. You could take what is known as a "greedy" approach and search for every single possible motif of length 4. Or you could come up with a list of all possible motifs based on the given sequences and search for those. Maybe you'd rather take a shot at a random search approach. Whatever strategy you choose, there's no doubt that more effort is needed to solve the problem. However, the problem gets even tougher as you can't always guarantee a perfect motif. (Spoiler: The motif in every sequence above is ATTG.)</p>
+				
+				<p>DNA can get messy and <b>mutations</b> can cause some serious difficulties when solving the MFP. Nucleotides within a motif can be slightly altered between sequences. To disregard a motif due to a mutation could lead to faulty research results. Therefore, we are no longer looking for a single motif but rather a set of possibly altered patterns, known as a <strong><i>k</i>-mer</strong> (where <i>k</i> is the length of the motifs).</p>
+				
+				<p>We now arrive to the <strong>definition of the MFP</strong>: Given a collection of DNA sequences, find a set of k-mers, one from each sequence, that minimizes the score of the resulting motif (slightly altered from Bioinformatics Algorithms: An Active Learning Approach by Phillip Compeau & PavelPevzner).</p>
+				
+				<p>What is the score of the resulting motif? A <strong>score</strong> is the numerical value given to the set of <i>k</i>-mers. The smaller the score, the less variation there is among the <i>k</i>-mers. A score of 0 would mean every sequence has the same pattern, like the ATTG example above. A score of 0 is bioinformaticians dream.</p>
+				
+            </div>
+
+            <hr>
+
+            <div id="section2" class="section"> 
+                <h3 id="title">Why Gamify Motif Finding?</h3>
+                <p>Science is a popular favorite subject in elementary schools yet not many people grow up to become scientists. Does this interest fade away over time? Maybe for some people but, as proven by the success of several citizen science games like Foldit and Phylo, people grow up still desiring to make scientific discoveries. Of course, we can't just throw people into laboratories and research facilities without the proper background. That's where gamification comes in to play! Gamifying hard tasks into simpler and fun games allows just about anyone to join in on scientific research.</p>
+				<p>Why specifically MFP? MFP is an exceptionally hard problem for computers. Humans, on the other hand, have a natural ability to perform pattern recognition. We don't have to go through a huge process to come up with a solution. Rather, we're able to adapt on the fly and spot patterns without much thought. Human-computer interaction (HCI) is a field of study that focuses on how humans and technology work together. This game was specifically designed to allow humans to shine with their pattern recognition skills while allowing them to use the computer for less advanced skills, like forming history logs.</p>
+            </div>
+
+            <hr>
+
+            <div id="section3" class="section"> 
+                <h3 id="title">Thesis</h3>
+                <p>Abstract: Citizen science is the collaboration of public participation with scientific research in efforts to advance scientific knowledge, address societal needs, and increase science literacy and attitudes in the public. Volunteers collect, process, and analyze data that would otherwise be too time consuming and costly for researchers to handle. One genre of citizen science projects are citizen science games, or games with a purpose. Through gamification, the complexity of problems can be reduced to that of which the general public can understand. Foldit, EyeWire, and Phylo are examples of gamifying the complex problems of folding proteins, mapping neurons, and aligning genome sequences, respectively. In this thesis, a new citizen science game, nucleoSLIDE, is developed to help solve the motif finding problem, where a motif can be defined as some meaningful, unknown pattern of length k hidden in a DNA sequence. The motif finding problem is important for genetic research and involves finding a collection of motifs, one from each sequence, in which the variation in motifs is minimal. This problem is NP-complete, meaning there exists no algorithm with a guaranteed optimal solution at this time. Furthermore, the size of sequences and lack of conservation of motifs in real-world data further complicates the problem. Like other citizen science games, nucleoSLIDE takes advantage of natural human skills, like pattern recognition, to overcome these complications. This thesis demonstrates how the complexity of the motif finding problem, a non-game context, can be reduced through the use of common game design elements, including but not limited to goals, rules, play, and user interface.</p>
+                <p>Read more <a href="thesis.pdf" target="_blank">here</a>.</p>
+            </div>
+        </div>
+	</body>
+</html>
